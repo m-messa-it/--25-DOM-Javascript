@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Калькулятор суми з історією</title>
+</head>
+<body>
+    <h2>Калькулятор суми</h2>
+
+    <div>
+        <input type="text" id="value1" placeholder="Число 1">
+        <span>+</span>
+        <input type="text" id="value2" placeholder="Число 2">
+        <span>=</span>
+        <span id="result">0</span>
+    </div>
+
+    <br>
+    <button id="calculate" onclick="calculate()">Порахувати</button>
+
+    <h3>Історія</h3>
+    <ul id="history"></ul>
+
+    <script src="script.js"></script>
+</body>
+</html>
