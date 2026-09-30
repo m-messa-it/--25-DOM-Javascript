@@ -3,6 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <title>Калькулятор суми з історією</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+        }
+        input {
+            width: 80px;
+            padding: 5px;
+            font-size: 16px;
+        }
+        button {
+            padding: 8px 15px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        #result {
+            font-weight: bold;
+            font-size: 18px;
+            color: #2c3e50;
+        }
+        .history-panel {
+            margin-top: 20px;
+            max-width: 320px;
+            border: 2px solid #ccc;
+            border-radius: 6px;
+            padding: 15px;
+            background-color: #f9f9f9;
+        }
+        .history-panel ul {
+            padding-left: 20px;
+            margin-bottom: 0;
+        }
+        .history-panel li {
+            margin-bottom: 5px;
+            color: #333;
+        }
+    </style>
 </head>
 <body>
     <h2>Калькулятор суми</h2>
@@ -15,11 +53,12 @@
         <span id="result">0</span>
     </div>
 
-    <br>
     <button id="calculate" onclick="calculate()">Порахувати</button>
 
-    <h3>Історія</h3>
-    <ul id="history"></ul>
+    <div class="history-panel">
+        <h3>Історія</h3>
+        <ul id="history"></ul>
+    </div>
 
     <script src="script.js"></script>
 </body>
